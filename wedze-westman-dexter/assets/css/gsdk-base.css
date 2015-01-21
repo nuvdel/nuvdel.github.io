@@ -1187,6 +1187,12 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
     margin-top:-5px;
 	}
 
-
+	::selection {
+  background: #FB9B09; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #FB9B09; /* Gecko Browsers */
+}
+	
 
 

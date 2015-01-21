@@ -6,10 +6,3 @@
 
 
 
-	::selection {
-  background: #FB9B09; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: #FB9B09; /* Gecko Browsers */
-}
-	
