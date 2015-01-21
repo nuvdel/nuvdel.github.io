@@ -1193,6 +1193,7 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
 ::-moz-selection {
   background: #FB9B09; /* Gecko Browsers */
 }
-	
-
+*{
+transition: 0.8s all ease-in-out;
+}
 
