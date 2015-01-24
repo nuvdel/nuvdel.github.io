@@ -1188,10 +1188,12 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
 	}
 
 	::selection {
-  background: #FB9B09; /* WebKit/Blink Browsers */
+  background: #FB9B09;
+color:#fff;  /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #FB9B09; /* Gecko Browsers */
+  background: #FB9B09;
+color:#fff;  /* Gecko Browsers */
 }
 *{
 transition: 0.8s all ease-in-out;
