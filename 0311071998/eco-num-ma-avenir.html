@@ -8,11 +8,25 @@
     
 	<link href="assets/css/get-shit-done.css" rel="stylesheet" />  
     <link href="assets/css/demo.css" rel="stylesheet" /> 
+	<script src="jquery/share.min.js" type="text/javascript"></script>
+	<script>
+	new Share(".share-button", {
+  networks: {
+    facebook: {
+      app_id: "coniuncta"
+    }
+  }
+});
+</script>
 
     <!--     Font Awesome     -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+	  <link href='http://fonts.googleapis.com/css?family=Gudea:400,700,400italic|Bitter:400,700,400italic|Ubuntu+Condensed|Ovo' rel='stylesheet' type='text/css'>
 	<style>
+*{
+transition: 0.2s all ease-in-out;
+}
     .card {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
@@ -73,17 +87,35 @@
   color: #ffd8a6;
   text-decoration: none;
 }
+h4{
+font-family:'Bitter' ,'Baskerville', "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+color:#00b7d1;
+}
+h3{
+font-family:'Bitter' ,'Baskerville', "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+color:#00b7d1;
+}
+h6{
+color:#00b7d1;
+}
+.btn{
+opacity:0.8;
+}
+.btn:hover{
+opacity:1;
+}
+a{
+color:#d7df21;
+}
 	</style>
-	<title>L&rsquo;avenir de l'&eacute;conomie num&eacute;rique au Maroc &mdash; Coniuncta</title>
+	<title>Le CES en images &mdash; Coniuncta</title>
   
 </head>
 
 <body>
- <div id="navbar-full">
+ <!--<div id="navbar-full">
     <div id="navbar">
-    <!--    
-        navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange  
-        -->
+
         <nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top" role="navigation">
           <div class="alert alert-success hidden">
             <div class="container">
@@ -92,7 +124,7 @@
           </div>
           
           <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
+        
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -103,20 +135,8 @@
               <a class="navbar-brand" href="./" ><img src="./assets/img/logoco.png" title="Coniuncta"/></a>
             </div>
         
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Acceuil</a></li>
-                <li class="active"><a href="/a-propos">&Agrave; Propos</a></li>
-                <li>
-                    <a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="fa fa-search"></i></a>
-                </li>
-              </ul> 
-               <form class="navbar-form navbar-left navbar-search-form" role="search">                  
-                 <div class="form-group">
-                      <input type="text" value="" class="form-control" placeholder="Search...">
-                 </div> 
-              </form> -->
+          
+         
               <ul class="nav navbar-nav navbar-right" style="margin-top:1px;">
                     <li><a href="./">Acceuil</a></li>
 					<li><a href="./a-propos">&Agrave; propos</a><li>
@@ -126,72 +146,91 @@
                 </li>
                </ul>
               
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+            </div>
+          </div>
         </nav>
-     <div class="blurred-container" style="height:100vh;min-height:100vh;">
-            <div class="img-src" style="height:100vh;min-height:100vh;background-image: url('http://i.imgur.com/ORQYZag.jpg?1');position:fixed;"></div>
-        </div>
-    </div><!--  end navbar -->
-
-</div> <!-- end menu-dropdown -->
-
-<div class="main">
-<div class="main social-line">
-    <div class="container">        
-        <div class="row">
-            <div class="col-md-12 text-center">
-                
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><h4 class="sharing-title">Partagez cet article !</h4></div>
-            <div class="col-md-2">
-                 <a class="btn btn-info  btn-round btn-wd btn-block btn-fll social-share social-twitter" href="http://twitter.com/intent/tweet?url=http://coniuncta.com/blog/l-economie-numerique-a-de-beaux-jours-devant-elle"><div class="count"><i class="fa fa-twitter fa-fw"></i> Twitter </div><div class="share"><span></span></div></a>
-            </div>
-            <div class="col-md-2">     
-                        <a class="btn btn-danger btn-round btn-block  btn-wd btn-fll social-share social-google-plus" href="javascript:void(0)" onclick="googleShare(this)"><div class="count"><i class="fa fa-google-plus-square fa-fw"></i> Google </div><div class="share"><span></span></div></a>
-            </div>
-            <div class="col-md-2">
-                        
-                       <a class="btn btn-primary btn-round btn-wd  btn-block btn-fil social-share" href="javascript:shareFacebookWithCallBack()"><div class="count"><i class="fa fa-facebook-square fa-fw"></i> Facebook </div><div class="share"><span></span></div></a>
-
-            </div>
+     <div class="blurred-container">
+            <div class="img-src" style="position:fixed;background-image: url('http://i.imgur.com/VHHAkjh.png')"></div>
         </div>
     </div>
+
+</div> 
+-->
+<div class="main">
+<div style="position:fixed;margin-top:50px;"><a href="./" style="margin-left:25px;"><button class="btn btn-primary btn-fill" style="border-color:#d7df21;background-color:#d7df21;">&#8592; Retourner &agrave; l'acceuil</button></a><div class="share-button"></div></div>
+
     <div class="container tim-container" style="max-width:800px; padding-top:50px">
-       <h1 class="text-center">L&rsquo;avenir de l'&eacute;conomie num&eacute;rique au Maroc<small class="subtitle">Qu'est-ce qui attend l'&eacute;conomie num&eacute;rique marocaine de demain.</small></h1>
-       <p><em><b>Ilyass El Gharbi</b> est le directeur de Google au Moyen-Orient et un contributeur r&eacute;gulier de Coniuncta. Avant cela, il a fond&eacute; les soci&eacute;t&eacute;s dirlabass.com (achet&eacute;e 647 millions de dollars par Google), book.me (achet&eacute;e 213 millions de dollars par TripAdvisor) et bulletin.com (achet&eacute;e 10 millions d'euros par un consortium anonyme), il &eacute;tait pr&eacute;c&eacute;demment Directeur Technique &agrave; Bloomberg M. El Gharbi est d&eacute;tenteur d’un Doctorat en G&eacute;nie Electronique de l’universit&eacute; de Stanford en Californie et est diplôm&eacute; de l’Ecole Polytechnique (X04). Il si&eacute;ge aux conseils d'administration de GameEco (&eacute;dition jeux vidéos de TG) et Google.
-<br><b>El Mamoun Kettani</b> est le Ministre de l'industrie et du commerce marocain.
-	   </em></p>
+       <h1 class="text-center"><img src="assets/img/logo-ces.png" alt="Le CES en images"><small class="subtitle" style="font-family:'Bitter';">Ma visite &agrave; l'International <abbr title="Consumer Electronics Show" style="font-family:'Bitter';">CES</abbr> document&eacute;e en images.</small></h1>
+      <p style="text-align:center;">D&eacute;but janvier se tenait, &agrave; Las Vegas, l'International Consummer Electronics Show (CES) auquel s'est rendu l'&eacute;quipe de Coniuncta. Durant ces 3 jours, nous avons decouvert les innovations de demain. Reportage.<br /></p>
+<h4>A l'entr&eacute;e du CES</h4></div>
+<p><img src="http://i.imgur.com/7RuUtAx.jpg?1" width="100%" /><br><br><span style="float:right;padding-right:50px;" class="text-muted">— Crédit photo <a href="http://cdn.arstechnica.net/wp-content/uploads/2013/01/IMG_1940.jpg">Ars Technica</a></span></p>
+<br><hr>
+<div class="container tim-container" style="max-width:800px;">
+<h4>Stand Intel</h4>
+</div>
+<p><img src="http://i.imgur.com/XcidPsT.jpg" width="100%" /><br><br><span style="float:right;padding-right:50px;" class="text-muted">— Crédit photo <a href="http://www.chicago-d.com/312/wp-content/uploads/2015/01/ces-2015.jpg">Chicago D'</a></span></p>
+<div class="container tim-container" style="max-width:800px;">
+<br><hr><br>
+<div style="float:right;height:115px;width:241px;background:url('assets/img/16098.png')"></div><p style="text-align:justify;padding-right:10px;">L'International CES est le lieu de rencontre par excellence des passionn&eacute;s et des professionnels des nouvelles technologies. Organis&eacute; chaque ann&eacute;e dans la mythique ville de Las Vegas, le CES sert depuis plus de 40 ans comme terrain d'essai aux innovateurs et aux perc&eacute;es technologiques. C'est &agrave; l'International CES que furent pr&eacute;sent&eacute;es certaines innovations telles que le VCR (1970), le Disque Laser ou CD (1981), le DVD (1996) ou bien les voitures sans chauffeurs (2013). Le CES est ainsi devenu la sc&egrave;ne globale o&ugrave; les nouvelles technologies sont pr&eacute;sent&eacute;es au public.</p>
+<br><hr>
+<h4>&#9835; Ils sont venus, Ils sont tous l&agrave; &#9835;</h4></div>
+<p><img src="http://i.imgur.com/kOjtzZE.jpg" width="100%" /><br><br><span style="float:right;padding-right:50px;" class="text-muted">— Crédit photo <a href="http://www.wired.com/images_blogs/gadgetlab/2013/01/ces-2012-nokia.jpg">Wired</a></span></p>
+<div class="container tim-container" style="max-width:800px;">
+<br><hr><br>
+<h1 class="text-center" style="text-align:center;font-family:Bitter;color:#00b7d1;">Les technologies mettables</h1><center><div style="width:300px;"><hr></div>
+<div style="width:450px;"><p style="text-align:center;font-family:Bitter;">Depuis quelques ann&eacute;es, les technologies &laquo;mettables&raquo; (de l'anglais <em style="text-align:center;font-family:Bitter;">&laquo;Wearable&raquo;</em>), ont le vent en poupe et les g&eacute;ants aussi s'y mettent ; ainsi, Google a lanc&eacute; ses <a href="http://www.google.com/glass/start/"><b style="text-align:center;font-family:Bitter;">Google Glass</b></a> et Apple son <a href="https://www.apple.com/watch/"><b style="text-align:center;font-family:Bitter;">Apple Watch</b></a>. Cette ann&eacute;e, au CES, cette tendance &eacute;tait bien visible. Voici une petite s&eacute;lection des technologies mettables pr&eacute;sent&eacute;es au CES.</p></div>
+<div style="width:300px;"><hr></div></center>
 
-<<p>En tant qu&#39;acteurs du numérique, le plus grand problème auquel nous faisons face est notre exposition aux failles de sécurité.</p>
-<p>Une majorité de sites est peu ou pas protégée et demande parfois que l&#39;on saisisse des données sensibles ; personnelles et bancaires. Ce problème de la protection des donnes s’est avéré crucial, quand j’ai fondé <em>dirlabass.ma</em> (<em>site de paris en ligne</em>, ndlr) où il était nécessaire pour les utilisateurs de rentrer leur données personnelles et bancaires. Il existe de nombreux systèmes qui permettent de limiter l’accès à un réseau comme le pare-feu, ou bien des logiciels en tout genres. </p>
-<p>Mais un informaticien aguerri ou un pirate doué aura toujours la possibilité de trouver une faille dans le pare feu ou de pénétrer la base de données et ainsi d&#39;avoir en sa possession la totalité des données insérées par les utilisateurs. Il est alors très important qu’il ne puisse rien en faire, pour cela la meilleure solution est une technique utilisée depuis la Rome Antique, et qui varia au fil du temps ; le <strong>cryptage des données</strong>. Supposons qu&#39;un pirate informatique accède aux données cryptées et qu’il n’arrive pas a les décrypter, il ne pourra rien en faire c’est l’avantage avec la cryptographie. Pour que les données ne soient pas interceptées on les code en utilisant une formule mathématique. Formule, qui dépend d&#39;une variable numérique plus ou moins longue ; la clé cryptage.</p>
-<p>Imaginons que l&#39;<strong>Individu X</strong> désire envoyer un message à son ami, l&#39;<strong>Individu Y</strong>. L’individu X va utiliser la clé de cryptage pour crypter le message et le receveur, l&#39;individu Y va utiliser cette même clé pour décrypter ce message. </p>
-<p>Il faut cependant faire en sorte que les combinaisons de cryptage soient nombreuses pour éviter qu&#39;un pirate malveillant puisse les deviner facilement.</p>
-<p>Imaginons que la clé ne comporte que 3 chiffres, <em>456, par exemple</em>, il sera alors facile pour un ordinateur d’essayer toute les combinaison possible et de la trouver mais imaginons que la clé comporte plusieurs centaines de chiffres il sera difficile (voir impossible) pour un ordinateur d’essayer toute les combinaison possibles en un cour laps de temps. Ce qui laisse le temps de détecter la faille dans le système et de changer la clé. </p>
-<p>Il reste, néanmoins, un problème c’est que pour que le destinataire puisse décrypter le message il faut qu&#39;il ait en sa possession cette clé de cryptage. Or, la clé de cryptage peut toujours être interceptée. C&#39;est pour éviter de se trouver dans ce cas de figure que l&#39;on utiliser une clé de cryptage et une clé de décryptage. </p>
-<p>Par exemple l’Individu A va générer deux clés : une clé de décryptage, qu&#39;il pourra conserver, et une clé de cryptage, qu&#39;il pourra dévoiler à qui il veut. C’est a dire que tout le monde peut crypter des données, mais qu&#39;elles ne pourront être décryptées que par ceux qui ont accès à la clé de décryptage.  </p>
-<p>Ces clés de cryptages et décryptages sont obtenues au travers d&#39;opérations mathématiques complexes en suivant des processus tels que le <em>RSA</em>, le <em>MD5</em> ou bien le <em>DSA</em>.</p>
+<div style="width:350px;float:right;text-align:justify;">
+<center><div style="width:225px;height:33px;background:url('assets/img/avegant.png');margin-top:10px;"></div></center><br>
+<p>Lorsque l'on parle de lunettes intelligentes, le premier mot qui vous vient &agrave; l&rsquo;esprit est sans aucun doute ; &laquo;<em>Google Glass</em>&raquo;. En effet, depuis que la firme de Mountain View a pr&eacute;sent&eacute; le tout premier mod&egrave;le de lunettes intelligentes fonctionnelles en avril 2012, elle est en situation de monopole. Jusqu'&agrave; pr&eacute;sent, il n'y avait que Google. Pourtant, cette ann&eacute;e, au CES, furent pr&eacute;sent&eacute;s de nouveaux mod&egrave;les de lunettes intelligentes ; <b><a href="http://www.sony.net/SonyInfo/News/Press/201412/14-118E/">SmartEyeglass Attach</a></b> de Sony, et <b><a href="http://www.epson.com/cgi-bin/Store/jsp/Landing/moverio-bt-200-smart-glasses.do">Moverio BT-200</a></b> d'Epson sans oublier &laquo; <a href="http://avegant.com/"><b><i>Glyph</i></b></a> &raquo; par Avegant.</p>
 
-<br >
-<em>Cr&eacute;dit photo: ©<a href="http://www.skillsforsecurity.org.uk/gfx/pictures/1281090833.jpg">skillsforsecurity</a></em>   <br><br><hr><br>  
+<p>Glyph est sans aucun doute le mod&egrave;le de lunettes connect&eacute;es le plus int&eacute;ressant, puisqu'Avegant a d&eacute;velopp&eacute; une paire de lunettes intelligentes qui n'en est pas une. Glyph est initialement un casque audio, avec Premium Stereo. Pourtant, il se transforme facilement en un projecteur vid&eacute;o avec une qualit&eacute; d'image extr&ecirc;mement &eacute;lev&eacute;e. </p>
+<br /><img src="http://i.imgur.com/pleY9yb.jpg" width="350px" /><br /><br /><span style="float:right;" class="text-muted">— Crédit photo <a href="https://s3.amazonaws.com/ksr/assets/001/550/021/8e93cff7537f0a9355501d214fffa0d3_large.jpg?1390353294">Kickstarter</a></span><br /><br />
+<p>Avec Glyph, Avegant ne s'est donc pas contenter de surfer sur la vague des lunettes intelligentes mais &eacute;galement sur celle des casques &agrave; r&eacute;alit&eacute; virtuelle, tels que le <i>Gear VR</i> de Samsung, le <i>Morpheus</i> de Sony, les casques <b><a href="//vuzix.com">Vuzix</a></b> ou bien, le plus c&eacute;l&egrave;bre d'entre eux, l&rsquo;<em>Oculus Rift</em>. Tous ces casques furent eux aussi pr&eacute;sent&eacute;s au CES. Une tendance prometteuse.</p>
+<br><br><iframe width="350" height="197" src="//www.youtube.com/embed/lRegJIvh_2g?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
+<div style="width:350px;float:left;text-align:justify;">
+<center><div style="width:100px;height:105px;background:url('assets/img/martianwatches.png');"></div></center><br>
+<p>Les montres intelligentes et connect&eacute;es sont bien souvent massives, cubiques, imposantes, flashy... bref, pas tr&egrave;s belles. Pourtant, dans le monde d'aujourd'hui, on ach&egrave;te des montres en premier lieu pour des raisons esth&eacute;tiques. C'est en partant de ce paradoxe que fut cr&eacute;&eacute; <a href="//martianwatches.com/"><b>Martian Watches</b></a>, une startup cr&eacute;ant des montres intelligentes aussi belles et &eacute;l&eacute;gantes que si elles &eacute;taient la cr&eacute;ation d'un ma&icirc;tre-horloger suisse.<br />
+<br />
+La montre intelligente de Martian, baptis&eacute;e &laquo;<i><a href="//martianwatches.com/notifier"><b> Notifier </b></a></i>&raquo;, apporte la commodit&eacute; des notifications &agrave; une horloge avant-gardiste. Le tout pour un prix terre &agrave; terre. Notifier peut &ecirc;tre contr&ocirc;l&eacute;e par la voix au travers de <em>Siri</em> ou encore <em>Google Now</em>, elle vous permet d'afficher vos messages sur son &eacute;cran de taille r&eacute;duite et de vous informer de toutes les activit&eacute;s de votre smartphone. La Notifier est compatible avec Android et iOS.<br />
+<br /><img src="http://i.imgur.com/D1rWB23.jpg" width="350px" /><br /><br /><span style="float:right;" class="text-muted">— Crédit photo <a href="http://androidspin.com/wp-content/uploads/2014/01/DSC_0431.jpg">Android Spin</a></span><br /><br />
+Martian affiche clairement son ambition de concurrencer les plus grands, que ce soit les firmes d&eacute;j&agrave; pr&eacute;sentes dans le march&eacute; de la montre intelligente et connect&eacute;e (telles que Samsung, Apple ou encore Motorola) ou bien les horlogers les plus prestigieux (tels que Rolex, Cartier ou Breitling).
+</p><br><br><iframe width="350" height="197" src="//www.youtube.com/embed/hGkh7OLuzbw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+</div><div class="container tim-container" style="max-width:800px;">
+<br><hr>
+<h4>Le CES est un lieu o&ugrave; les rencontres insolites sont monnaie courante</h4></div>
+<p><img src="http://i.imgur.com/Dk3J7UJ.jpg" width="100%" /><br><br><span style="float:right;padding-right:50px;" class="text-muted">— Crédit photo <a href="http://cdn.arstechnica.net/wp-content/uploads/2013/01/tablet-man.jpg">Ars Technica</a></span></p>
+<div class="container tim-container" style="max-width:800px;">
+<br><br>
+
+<p><em></em></p>
+	  <br><br><br><br>  
            <!--     end extras -->        
 		   
-<img src="http://1.gravatar.com/avatar/186ec8ec05389c5c9e274c53d36e2b4f?&d=identicon&r=G" class="img-circle" align="left" style="margin-right:10px;" /><div style="padding-right:5px;"><h6>Ilyass El Gharbi</h6>Ilyass El Gharbi est le directeur de Google au Moyen-Orient et un contributeur r&eacute;gulier de Coniuncta. Il a &eacute;galement cr&eacute;&eacute; dirlabass.com, book.me et bulletin.com</div><br><hr>
-<img src="assets/img/mamoun.png" class="img-circle" align="left" style="margin-right:10px;" height="80" /><div style="padding-right:5px;"><h6>El Mamoun Kettani</h6>El Mamoun Kettani est Ministre de l'industrie et du commerce.</div><br><hr>
-<img src="http://1.gravatar.com/avatar/f75e0b4772e465509e6a7ed86b3c3139?&d=identicon&r=G" class="img-circle" align="left" style="margin-right:10px;" height="80"/><div style="padding-right:5px;"><h6>Zakaria Bounouar <span class="label label-danger">Directeur de la publication</span></h6>Zakaria Bounouar est le directeur de la publication de Coniuncta et le pr&eacute;sident de Coniuncta SA. </div><br><hr>
+<!--<img src="http://1.gravatar.com/avatar/f75e0b4772e465509e6a7ed86b3c3139?&d=identicon&r=G" class="img-circle" align="left" style="margin-right:10px;" height="80"/><div style="padding-right:5px;"><h6>Zakaria Bounouar <span class="label label-danger">Directeur de la publication</span></h6>Zakaria Bounouar est le directeur de la publication de Coniuncta et le pr&eacute;sident de Coniuncta SA.-->
+<div style="height:120px;width:800px;background:url('assets/img/zack.png');"></div><br>
+<center><p style="text-align:center;font-family:'Bitter';width:350px;"><b style="font-family:'Bitter';">Zakaria Bounouar</b>, est le directeur de la publication &agrave; Coniuncta et le pr&eacute;sident de <a href="//coniuncta.com/corporate">Coniuncta SAS</a>, &eacute;diteur de Coniuncta.<br>
+<a href="//twitter.com/oddeconomist"><i class="fa fa-twitter fa-fw"></i></a>&nbsp; &nbsp; &nbsp;<a href="//facebook.com/zbounouar"><i class="fa fa-facebook-square fa-fw"></i></a></p>
+</center><br><hr>
 <div class="comments">
-<h3>Commentaires <span class="badge">2</span></h3><br><br>
-<img src="https://pbs.twimg.com/profile_images/2200590822/drew_400x400.jpg" height="80" class="img-circle" align="left" style="margin-right:10px;" /><h6>Drew Houston <span class="label label-primary" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Ce macaron certifie que cet utilisateur est bien la personne qu'il pr&eacute;tend &ecirc;tre">V&Eacute;rifi&Eacute;</span></h6><span class="text-muted"><strong>— Drew a partagé cet article sur Twitter :</strong> @drewhouston « The best perspective there is on web security by <b>@gharbi</b> »</span><br><br><br>
-<img src="http://1.gravatar.com/avatar/186ec8ec05389c5c9e274c53d36e2b4f?&d=identicon&r=G" height="80" class="img-circle" align="left" style="margin-right:10px;" /><h6>Ilyass El Gharbi <span class="label label-warning">Auteur</span></h6><span class="text-muted"><strong>— Ilyass a partagé cet article sur Twitter :</strong> @gharbi « Mon dernier article sur @coniuncta cc @oddeconomist »</span><br><br><br>
+<h3>Commentaires <span class="badge">3</span></h3><br><br>
+<div>
+<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/p160x160/1920526_784818924865027_380005831_n.jpg?oh=d172e8c2c2d6b77d530bc5afa0800804&oe=55281A09&__gda__=1432952068_abc485e37eca0857e94f782505eb6673" height="80" class="img-circle" align="left" style="margin-right:10px;" /><h6>Ayman Boulaouane</h6>Alors comme &ccedil;a le patron va &agrave; Las Vegas et n'enm&egrave;ne pas l'&eacute;quipe de Gam&co avec lui ? Super article, sinon. Par contre, je me demandais, pourquoi est-ce que le site a chang&eacute; sur cet article ?<br>
+<br><hr></div>
+<div>
+<img src="http://1.gravatar.com/avatar/186ec8ec05389c5c9e274c53d36e2b4f?&d=identicon&r=G" height="80" class="img-circle" align="left" style="margin-right:10px;" /><h6>Ilyass El Gharbi</h6>J'ai bien aim&eacute; je suis impatient de voir ce que Martian va devenir. Je me demandais aussi, pourqoi le site n'est pas pareil sur cet article ?<br>
+<br><hr></div>
+<div>
+<img src="https://s3.amazonaws.com/creativemornings-com/uploads/user/avatar/66818/8bit_avatar.jpg" height="80" class="img-circle" align="left" style="margin-right:10px;" /><h6>Karazay <span class="label label-primary">CONIUNCTA</span></h6><a>@ayman</a> et <a>@gharbi</a>, si le site n'a pas chang&eacute;, Zakaria en tant que directeur de la publication peut &agrave; tout moment changer le design d'une page ou d'un billet. Le design que vous voyez ici est le design qui est utilis&eacute; sur <a>Pacifico</a> et qui devrait arriver sur Coniuncta pendant le printemps. Si Zakaria l'utilise sur ce billet en particulier, c'est que cet article apparait sur les deux blogs.<br>
+<br><hr></div>
 </div></div>
     <div class="space"></div>
 <!-- end container -->
 </div>
 <!-- end main -->
-
+<footer style="height:50px;background:#d7df21;color:white;padding-left:15%;padding-right:15%;padding-top:15px;"><div style="float:left;height:25px;width:40px;background:url('assets/img/logoco.png');"></div><div style="float:right">&copy; 2015 Tous droits r&eacute;serv&eacute;s. Coniuncta.com est un projet de TPE.</div></footer>
 </body>
 
     <script src="jquery/jquery-1.10.2.js" type="text/javascript"></script>
@@ -204,5 +243,15 @@
 	<script src="assets/js/get-shit-done.js"></script>
 	
     <script src="assets/js/custom.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58682152-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </html>
