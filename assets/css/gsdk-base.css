@@ -1198,4 +1198,9 @@ color:#fff;  /* Gecko Browsers */
 *{
 transition: 0.8s all ease-in-out;
 }
-
+.navbar-brand{
+opacity:0.7;
+}
+.navbar-brand:hover{
+opacity:1;
+}
